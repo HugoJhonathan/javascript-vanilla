@@ -992,6 +992,9 @@ footer#rodape .container-rodape .box:nth-child(even) {
   footer#rodape .container-rodape .box:nth-child(even) {
     border: none;
   }
+  footer#rodape .linha {
+    text-align: center;
+  }
   body header nav {
     display: none;
     background-color: white;
