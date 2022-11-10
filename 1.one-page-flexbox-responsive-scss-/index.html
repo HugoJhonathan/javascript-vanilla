@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
+    <title>document</title>
+</head>
+<script>
+    window.onload = () => {
+
+        document.querySelector('.box_loader').classList.add('hidde');
+
+        const btnOpenMenu = document.querySelector("#icon-menu-mobile");
+        const menu = document.querySelector("#menu");
+        const btnChangeMode = document.querySelector("#view-button-box");
+
+        btnOpenMenu.addEventListener('click', () => {
+            menu.classList.toggle('mostrar-menu-mobile');
+        });
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('mostrar-menu-mobile');
+        });
+
+        btnChangeMode.addEventListener('click', () => {
+            document.querySelector('html').classList.toggle('view-mode');
+        });
+
+        const target = document.querySelectorAll('[data-anime]');
+
+        const animeScroll = () => {
+            const windowTop = window.pageYOffset + (window.innerHeight) - 50; // tamanho do height a janela
+            target.forEach(function (elemento) {
+                //  console.log(windowTop);
+                if (windowTop > elemento.offsetTop) {
+                    elemento.classList.add('animate');
+                } else {
+                    elemento.classList.remove('animate');
+                }
+
+            }); // a distancia de cada elemento em relação ao topo
+        }
+
+        window.addEventListener('scroll', (ev) => {
+
+            animeScroll();
+
+            if (window.pageYOffset > (document.querySelector("#section1").offsetTop - 85)) {
+                document.querySelector("html").classList.add('dark');
+            } else {
+                document.querySelector("html").classList.remove('dark');
+            }
+
+        });
+
+    }
+</script>
+
+<body>
+
+    <div id="view-button-box">
+        <img src="imagens/eye-solid.svg">
+    </div>
+
+
+    <div class="box_loader flex-cc">
+        <div class="loader">
+            <img src="imagens/image.png">
+            <span class="olho1"></span>
+            <span class="olho2"></span>
+        </div>
+        <span class="txt-loading">carregando...</span>
+    </div>
+
+
+    <header>
+
+        <div class="header-container container">
+            <div class="header-itens container">
+
+                <div id="logo" class="flex-cc">logo</div>
+
+                <div id="icon-menu-mobile" class="flex-cc">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64"
+                        enable-background="new 0 0 64 64" xml:space="preserve">
+                        <g>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M60,16H4c-2.2,0-4-1.8-4-4v0c0-2.2,1.8-4,4-4h56c2.2,0,4,1.8,4,4v0C64,14.2,62.2,16,60,16z" />
+                                    </g>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M60,56H4c-2.2,0-4-1.8-4-4v0c0-2.2,1.8-4,4-4h56c2.2,0,4,1.8,4,4v0C64,54.2,62.2,56,60,56z" />
+                                    </g>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M60,36H4c-2.2,0-4-1.8-4-4v0c0-2.2,1.8-4,4-4h56c2.2,0,4,1.8,4,4v0C64,34.2,62.2,36,60,36z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#section1">section 1</a></li>
+                        <li><a href="#section2">section 2</a></li>
+                        <li><a href="#section3">section 3</a></li>
+                        <li><a href="#contato">contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="fundo1 flex-cc">
+            <div class="container txt">
+
+                <strong>toque</strong> no botão<br>
+                para <strong>destacar</strong><br>
+                os <strong>elementos.</strong>
+
+            </div>
+        </div>
+
+        <section id="section1">
+            <div class="container no-overflow">
+
+                <h1>section #1</h1>
+
+                <div class="conteudo">
+
+                    <div class="container-itens flex-cc">
+                        <div class="box-itens" data-anime="left">
+                            <div class="box-image">
+                                <img src="imagens/linux.png" alt="logo-linux">
+                            </div>
+
+                            <div class="bottom-box">
+                                <div class="txt">Linux</div>
+                                <a href="#">link</a>
+                            </div>
+
+                        </div>
+                        <div class="box-itens" data-anime="right">
+                            <div class="box-image">
+                                <img src="imagens/windows.png" alt="logo-windows">
+                            </div>
+
+                            <div class="bottom-box">
+                                <div class="txt">Windows</div>
+                                <a href="#">link</a>
+                            </div>
+
+                        </div>
+                        <div class="box-itens" data-anime="left">
+                            <div class="box-image">
+                                <img src="imagens/macos.png" alt="logo-mac-os">
+                            </div>
+
+                            <div class="bottom-box">
+                                <div class="txt">MacOS</div>
+                                <a href="#">link</a>
+                            </div>
+
+                        </div>
+                        <div class="box-itens" data-anime="right">
+                            <div class="box-image">
+                                <img src="imagens/android.png" alt="logo-android">
+                            </div>
+
+                            <div class="bottom-box">
+                                <div class="txt">Android</div>
+                                <a href="#">link</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- conteudo -->
+
+            </div>
+        </section>
+
+
+        <section id="section2">
+            <div class="container">
+                <h1>section #2</h1>
+                <div class="conteudo">
+
+                    <div class="container-p-image">
+                        <div class="box-left no-overflow">
+
+                            <p data-anime="left">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Earum quidem molestias voluptate vitae tempore doloremque.
+                            </p>
+
+                            <span data-anime="right">
+                                <strong>#</strong>lorem<strong>Ipsum</strong>
+                            </span>
+                        </div>
+
+                        <div class="box-right no-overflow">
+                            <img data-anime="right" src="imagens/gif-101e6c73606457.5c0f521fbe8172.gif" alt=""
+                                srcset="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section3">
+            <div class="container">
+                <h1>section #3</h1>
+                <div class="conteudo container">
+
+                    <div class="container-itens no-overflow">
+                        <div class="box-itens" data-anime="top">
+                            <img src="imagens/badge-outline.svg" height="140px" alt="" />
+                            <ul>
+                                <li><strong>lorem</strong> ipsum</li>
+                                <li>lorem <strong>ipsum</strong></li>
+                                <li><strong>lorem</strong> ipsum</li>
+                            </ul>
+                            <div class="btn-link">
+                                <a href="#">link</a>
+                            </div>
+                        </div>
+                        <div class="box-itens" data-anime="top">
+                            <img src="imagens/clipboard-list-outline.svg" height="140px" alt="" />
+                            <ul>
+                                <li><strong>lorem</strong> ipsum</li>
+                                <li>lorem <strong>ipsum</strong></li>
+                                <li><strong>lorem</strong> ipsum</li>
+                            </ul>
+                            <div class="btn-link">
+                                <a href="#">link</a>
+                            </div>
+                        </div>
+                        <div class="box-itens" data-anime="top">
+                            <img src="imagens/upward-trend-outline.svg" height="140px" alt="" />
+                            <ul>
+                                <li><strong>lorem</strong> ipsum</li>
+                                <li>lorem <strong>ipsum</strong></li>
+                                <li><strong>lorem</strong> ipsum</li>
+                            </ul>
+                            <div class="btn-link">
+                                <a href="#">link</a>
+                            </div>
+                        </div>
+                        <div class="box-itens" data-anime="top">
+                            <img src="imagens/bulb-money-curvy-outline-filled.svg" height="140px" alt="" />
+                            <div class="btn-link">
+                                <a href="#">link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="newsletter" class="no-overflow">
+            <div class="container box-newsletter">
+                <span data-anime="left">assine nossa <strong>newsletter</strong></span>
+                <input data-anime="right" t ype="email" name="email" id="email" placeholder="seu@email.com" required
+                    autocomplete="off">
+            </div>
+        </section>
+
+
+        <section id="contato">
+            <div class="container container-contato no-overflow">
+                <h1>#contato</h1>
+                <form class="formulario container">
+                    <div class="input-box" data-anime="top">
+                        <input type="email" name="email" id="email" placeholder="seu@email.com" required
+                            autocomplete="off">
+                    </div>
+                    <div class="input-box" data-anime="top">
+                        <input type="text" name="assunto" id="assunto" placeholder="assunto" required
+                            autocomplete="off">
+                    </div>
+                    <div class="input-box" data-anime="top">
+                        <textarea placeholder="mensagem"></textarea>
+                    </div>
+                    <div class="input-box submit" data-anime="right">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <footer id="rodape">
+            <div class="container-rodape container">
+
+                <div class="box left">
+                    <ul>
+                        <li><a href="#section1">section #1</a>
+                        <li><a href="#section2">section #2</a>
+                        <li><a href="#section3">section #3</a>
+                        <li><a href="#contato">contato</a>
+                    </ul>
+                </div>
+
+
+                <div class="box center flex-cc">
+                    <div class="txt" data-anime="left">
+                        Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Voluptates qui consequuntur
+                        itaque reiciendis dicta rem fugiat cupiditate
+                        off.
+                    </div>
+                </div>
+
+
+                <div class="box right">
+                    <a href="https://github.com/HugoJhonathan" target="_blank">
+                        <img src="imagens/social/github.svg" alt="" srcset="">
+                    </a>
+                    <a href="#">
+                        <img src="imagens/social/linkedin.svg" alt="" srcset="">
+                    </a>
+                    <a href="#">
+                        <img src="imagens/social/discord.svg" alt="" srcset="">
+                    </a>
+                    <a href="#">
+                        <img src="imagens/social/whatsapp.svg" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="linha">
+                <div class="container">
+                    Desenvolvido por <a href="https://github.com/HugoJhonathan" target="_blank">Hugo Jhonathan</a> -
+                    2021
+                </div>
+            </div>
+
+        </footer>
+
+    </main>
+</body>
+
+</html>
