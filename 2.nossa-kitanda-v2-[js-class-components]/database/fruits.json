@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "fruta": "Mamão Papaia",
+        "preco": 6.13
+    },
+    {
+        "id": 2,
+        "fruta": "Laranja",
+        "preco": 4.49
+    },
+    {
+        "id": 3,
+        "fruta": "Maça",
+        "preco": 10.99
+    },
+    {
+        "id": 4,
+        "fruta": "Manga",
+        "preco": 4.98
+    },
+    {
+        "id": 5,
+        "fruta": "Melão",
+        "preco": 10.67
+    },
+    {
+        "id": 6,
+        "fruta": "Melancia",
+        "preco": 3.76
+    },
+    {
+        "id": 7,
+        "fruta": "Banana",
+        "preco": 11.32
+    },
+    {
+        "id": 8,
+        "fruta": "Morango",
+        "preco": 27.90
+    },
+    {
+        "id": 9,
+        "fruta": "Abacate",
+        "preco": 3.56
+    },
+    {
+        "id": 10,
+        "fruta": "Pessego",
+        "preco": 8.99
+    },
+    {
+        "id": 11,
+        "fruta": "Goiaba",
+        "preco": 3.56
+    },
+    {
+        "id": 12,
+        "fruta": "Uva",
+        "preco": 32.56
+    },
+    {
+        "id": 13,
+        "fruta": "Limão",
+        "preco": 7.23
+    },
+    {
+        "id": 14,
+        "fruta": "Maracujá",
+        "preco": 14.99
+    },
+    {
+        "id": 15,
+        "fruta": "Abacaxi",
+        "preco": 8.73
+    },
+    {
+        "id": 16,
+        "fruta": "Tomate",
+        "preco": 6.98
+    }
+]

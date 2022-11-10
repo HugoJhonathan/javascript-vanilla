@@ -1,0 +1,299 @@
+@use 'cesta';
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+}
+
+.visualizacao,
+button {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+div {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+body.opens {
+    .application {
+        transition: 100ms;
+        padding-right: 450px;
+    }
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    background: variables.$gradient-green;
+    width: 100%;
+}
+
+.cont {
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    transition: .1s;
+}
+
+.cont-ultrawide {
+    width: 100%;
+    transition: .1s;
+}
+
+header h1 {
+    padding: 20px;
+    font-weight: 800;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #1b5e20;
+    padding: 10px 15px;
+
+    & .btnCesta {
+        background: rgba(0, 0, 0, 0.1);
+        color: rgba(255, 255, 255, 0.8);
+        width: auto;
+        padding: 3px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        position: relative;
+
+        & span {
+            background: #000000;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            border-radius: 100px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+
+        & .icone {
+            height: 40px;
+            width: 40px;
+            margin: 0px 5px;
+            background: url('../src/images/cesta.png') center no-repeat;
+            background-size: 100% auto;
+
+        }
+    }
+
+}
+
+.shake {
+    animation: shake 0.7s cubic-bezier(.36, .09, .99, .97) both;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-3px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+h2 {
+    margin-top: 5px;
+    background-color: #ef6c00;
+    border-bottom: 2px solid #bf360c;
+    padding: 2px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.container-frutas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+}
+
+.box {
+    /* background-color: red; */
+    font-size: 0.8rem;
+    flex: 1 1 calc(25% - 18px);
+    min-width: 237px;
+    padding: 10px;
+    width: 238px;
+    max-width: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.box_select {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    gap: 0px 15px;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+
+    & .box {
+        height: auto;
+
+        padding: 0px;
+        border: none;
+        align-items: start;
+    }
+
+    & select {
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    & label {
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.ultrawideModeInput {
+    margin-right: 3px;
+}
+
+.box h1 {
+    /* background-color: yellow; */
+    color: #333;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    text-align: center;
+}
+
+.box .imagem {
+    padding: 10px;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .imagem img {
+    height: 100%;
+}
+
+.box span {
+    /* background-color: yellow; */
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.07);
+}
+
+.box button {
+    background-color: #ef6c00;
+    border: none;
+    width: 100px;
+    padding: 7px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 100px;
+    margin: 15px 0px 5px 0px;
+    font-weight: bold;
+}
+
+
+.visualizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.d-none {
+    display: none;
+    padding: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+    body.opens .btnCesta {
+        position: fixed !important;
+        z-index: 3;
+        right: 15px;
+        top: 30px;
+    }
+}

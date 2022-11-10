@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./src/script/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.min.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Kitanda 2 - JS</title>
+</head>
+
+<body>
+
+    <div class="application">
+
+        <header>
+            <div class="header cont">
+                <h1>NOSSA KITANDA 2</h1>
+                <button title="Mostrar/Esconder a Cesta" class="btnCesta" id="btnCesta">
+                    <div class="icone"></div>
+                    <span class="btnCestaQuantidade">😢</span>
+                </button>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="cont conteudo">
+
+                <div class="box_select">
+
+                    <div class="box">
+                        <label for="ordem">Ordenar por:</label>
+                        <select name="" id="ordem">
+                            <option selected disabled>Selecione</option>
+                            <option value="nomeCrescente">Nome (crescente)</option>
+                            <option value="nomeDecrescente">Nome (decrescente)</option>
+                            <option value="precoCrescente">Preço (crescente)</option>
+                            <option value="precoDecrescente">Preço (decrescente)</option>
+                        </select>
+                    </div>
+
+                    <div class="box">
+                        Visualização:
+                        <label for="ultrawideModeInput">
+                            <div class="visualizacao">
+                                <input type="checkbox" name="ultrawide_mode" id="ultrawideModeInput"
+                                    class="ultrawideModeInput">
+                                Ultrawide mode
+                            </div>
+                        </label>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+
+                </div>
+
+
+                <!-- Onde irá carregar os ITEM PRODUTO -->
+                <div class="container-frutas"></div>
+
+            </div>
+
+
+            <!-- ITEM PRODUTO -->
+            <template id="item-prod">
+                <div class="box">
+                    <h1>Abacate</h1>
+                    <div class="imagem">
+                        <img src="imagens/Abacate.png">
+                    </div>
+                    <span class="preco">R$&nbsp;3,56/Kg</span>
+                    <button class="btnAddCarrinho">+ Carrinho</button>
+                </div>
+            </template>
+
+
+            <!-- ITEMs NA CESTA -->
+            <template id="item-cart">
+                <div class="box-itens modelo-item-carrinho">
+                    <div class="imagem">
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="nome-e-quantidade">
+                        <div class="nome">Nome da fruta</div>
+                        <div class="quantidade">
+                            <button class="btn btn-dec">-</button>
+                            <input type="number" class="input_quantidade" />
+                            <button class="btn btn-add">+</button>
+                            Kg
+                        </div>
+                    </div>
+                    <div class="total">R$ 888,00</div>
+                    <button class="btn-excluir"><img src="./src/images/lixeira.png" alt="" srcset=""></button>
+                </div>
+            </template>
+
+
+
+            <!-- CESTA -->
+            <template id="template-carrinho">
+
+                <div>
+                    <!-- <div id="fundo-carrinho" class="fundo-carrinho"></div> -->
+                    <div id="carrinho" class="carrinho">
+                        <div>
+                            <h3 class="title">Minha Cesta - (<span></span>)</h3>
+                        </div>
+                        <!-- <div class="cesta-vazia"></div> -->
+                        <div class="itens-carrinho">
+
+                        </div>
+
+
+                        <div class="rodape-carrinho">
+                            <div class="box-prazo">
+                                <div class="linha-total-prazo">
+                                    <span>TOTAL À PRAZO:</span>
+                                    <strong class="valor-total">R$ 9,99</strong>
+                                </div>
+                                <div class="linha-parcelamento">
+                                    (em até 12x de <span>R$ 29,89</span> sem juros)
+                                </div>
+                            </div>
+
+                            <div class="box-vista">
+                                <div class="linha-total-vista">
+                                    <span>TOTAL À VISTA:</span>
+                                    <strong>R$ 2,99</strong>
+                                </div>
+                                <div class="linha-economia">
+                                    -10% (Economize: <span>R$ 53,81</span>)
+                                </div>
+                            </div>
+
+                            <input class="btn-finalizar-compra" type="submit" value="Finalizar Compra">
+
+                        </div>
+                    </div>
+            </template>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
