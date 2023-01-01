@@ -6,32 +6,20 @@ __Live Demo__
 <table>
 <tr>
 <tH style='padding:none' padding=none width=350 align=right  valign="center">
-<img src="https://linuxhint.com/wp-content/uploads/2022/08/word-image-210014-1.png" width='400px'  height="auto"></tH>
+<img src=./1.one-page-flexbox-responsive-scss-/preview.png width='400px'  height="auto"></tH>
 <tH width=700 valign="center" align=left>
   
 <p align="center">
-<a href="https://github.com/HugoJhonathan/ti-academy-ciclo-02/tree/master/desafio1-kitanda">
+<a href="./1.one-page-flexbox-responsive-scss-">
 1.one-page-flexbox-responsive-scss-
 </a>
 <div align="center">
-  
-<div align="center">
-
-*asasd asdasd asdasdasdasd __aasdasd__*
-
-</div>
-
-<div align=center>
-<sub>
-
-__HTML__ | __CSS__ | __REACT__</sub>
-</div>
   
 </div>
   
 <div align="center">
    
-<sub> __[🖥️ DEMO](https://github.com/HugoJhonathan/ti-academy-ciclo-02/tree/master/desafio1-kitanda)__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](https://github.com/HugoJhonathan/ti-academy-ciclo-02/tree/master/desafio1-kitanda)__ </sub>
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/1.one-page-flexbox-responsive-scss-)__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](./1.one-page-flexbox-responsive-scss-)__ </sub>
      
 </div>
       
@@ -42,32 +30,44 @@ __HTML__ | __CSS__ | __REACT__</sub>
 <table>
 <tr>
 <tH style='padding:none' padding=none width=350 align=right  valign="center">
-<img src="https://linuxhint.com/wp-content/uploads/2022/08/word-image-210014-1.png" width='400px'  height="auto"></tH>
+<img src=./2.nossa-kitanda-v2-[js-class-components]/preview.png width='400px'  height="auto"></tH>
 <tH width=700 valign="center" align=left>
   
 <p align="center">
-<a href="https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components]">
+<a href="./2.nossa-kitanda-v2-[js-class-components]">
 2.nossa-kitanda-v2-[js-class-components]
 </a>
 <div align="center">
-  
-<div align="center">
-
-*Simulação do comportamento de um carrinho de compras, com manipulação do DOM baseado em Object Class.*
-
-</div>
-
-<div align=center>
-<sub>
-
-__HTML__ | __CSS__ | __JS__</sub>
-</div>
   
 </div>
   
 <div align="center">
    
-<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components])__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components])__ </sub>
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components])__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](./2.nossa-kitanda-v2-[js-class-components])__ </sub>
+     
+</div>
+      
+</tH>
+</tr>
+</table>
+
+<table>
+<tr>
+<tH style='padding:none' padding=none width=350 align=right  valign="center">
+<img src=./3.todo-list/preview.png width='400px'  height="auto"></tH>
+<tH width=700 valign="center" align=left>
+  
+<p align="center">
+<a href="./3.todo-list">
+3.todo-list
+</a>
+<div align="center">
+  
+</div>
+  
+<div align="center">
+   
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/3.todo-list)__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](./3.todo-list)__ </sub>
      
 </div>
       

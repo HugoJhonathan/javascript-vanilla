@@ -2,6 +2,7 @@
 // just run this file
 //
 const excludeFolders = ['.git', 'images',]
+const deployBase = "https://hugojhonathan.github.io/projetos-de-treino/"
 
 let config = [
     {
@@ -16,43 +17,38 @@ let config = [
 ]
 
 function generateBase(folder, data, index) {
+    // let [msg, languages, source] = ''
 
-    let [msg, languages, source] = ''
-
-    if (data.msg) {
-        msg = '<div align="center">\n\n*' + data.msg + '*\n\n</div>'
-    }
-    source = "https://hugojhonathan.github.io/projetos-de-treino/" + folder
-    if (data.source) {
-        source = data.source
-    }
-    if (data.languages) {
-        let langs = data.languages.map(el => `__${el.toUpperCase()}__`).toString().replaceAll(',', ' | ')
-        languages = '<div align=center>\n<sub>\n\n' + langs + '</sub>\n</div>'
-    }
+    // if (data.msg) {
+    //     msg = '<div align="center">\n\n*' + data.msg + '*\n\n</div>'
+    // }
+    // source = "https://hugojhonathan.github.io/projetos-de-treino/" + folder
+    // if (data.source) {
+    //     source = data.source
+    // }
+    // if (data.languages) {
+    //     let langs = data.languages.map(el => `__${el.toUpperCase()}__`).toString().replaceAll(',', ' | ')
+    //     languages = '<div align=center>\n<sub>\n\n' + langs + '</sub>\n</div>'
+    // }
 
     return `
 <table>
 <tr>
 <tH style='padding:none' padding=none width=350 align=right  valign="center">
-<img src="https://linuxhint.com/wp-content/uploads/2022/08/word-image-210014-1.png" width='400px'  height="auto"></tH>
+<img src=./${folder + '/preview.png'} width='400px'  height="auto"></tH>
 <tH width=700 valign="center" align=left>
   
 <p align="center">
-<a href="${source}">
+<a href="./${folder}">
 ${folder}
 </a>
 <div align="center">
-  
-${msg}
-
-${languages}
   
 </div>
   
 <div align="center">
    
-<sub> __[🖥️ DEMO](${source})__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](${source})__ </sub>
+<sub> __[🖥️ DEMO](${deployBase + folder})__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](./${folder})__ </sub>
      
 </div>
       
