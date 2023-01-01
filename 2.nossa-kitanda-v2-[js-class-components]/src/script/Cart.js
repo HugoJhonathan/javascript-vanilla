@@ -37,6 +37,7 @@ export class Carrinho {
     }
 
     animateButtonCart() {
+        console.log(this.items)
         this.btnCartCount.textContent = this.items.length > 0 ? this.items.length : '😢'
         addClassWithEffect(this.btnCart, 'shake')
     }
@@ -79,6 +80,7 @@ export class Carrinho {
 
         this.items.push(itemCarrinho)
         this.updateFooter()
+        this.animateButtonCart()
     }
 
     removeItem(item) {

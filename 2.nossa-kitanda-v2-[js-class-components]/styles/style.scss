@@ -9,14 +9,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Poppins', sans-serif;
-}
-
-.visualizacao,
-button {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
+.visualizacao,
+button {}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -40,6 +40,7 @@ div {
 }
 
 body.opens {
+
     .application {
         transition: 100ms;
         padding-right: 450px;
@@ -74,7 +75,7 @@ header h1 {
     padding: 20px;
     font-weight: 800;
     color: #fff;
-    white-space: nowrap;
+    white-space: wrap;
 }
 
 .header {
@@ -85,6 +86,7 @@ header h1 {
     flex-wrap: wrap;
     border-bottom: 3px solid #1b5e20;
     padding: 10px 15px;
+    min-height: 111px;
 
     & .btnCesta {
         background: rgba(0, 0, 0, 0.1);
@@ -289,7 +291,14 @@ h2 {
 
 }
 
+@media screen and (max-width: 1920px) {
+    .ultrawidemode {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
     body.opens .btnCesta {
         position: fixed !important;
         z-index: 3;
