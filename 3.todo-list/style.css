@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color-primary: #333;
+    --text-color-secondary: #757575;
+    --background-color-primary: #fefefe;
+}
+
+* {
+    font-family: 'Inter';
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color-primary);
+}
+
+.todoBox {
+    width: 500px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 10px;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+
+.todoBox form {
+    display: flex;
+    background: rgba(0, 0, 0, 0.02);
+    flex-wrap: nowrap;
+    border-radius: 10px;
+}
+
+/* INPUT TO ADD TASK */
+.todoBox form input {
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 30px 10px;
+    flex: 1 1 auto;
+    min-width: 100px;
+    font-weight: 700;
+    color: var(--text-color-primary);
+
+}
+
+/* BUTTON TO ADD TASK */
+.todoBox form button {
+    background: beige;
+    flex: 0 1 auto;
+    background: transparent;
+    cursor: pointer;
+    padding: 20px;
+    outline: none;
+    border: none;
+    min-width: fit-content;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+.todoItem {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    position: relative;
+}
+
+.todoItem span {
+    width: 100%;
+    font-size: 10px;
+    position: absolute;
+    top: -15px;
+}
+
+.todoItem input[type="checkbox"] {
+    padding: 100px;
+    flex: 0;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+
+.todoItem input[type="text"] {
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 30px 10px;
+    flex: 1 1 auto;
+    min-width: 100px;
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
+    font-weight: 700;
+    color: var(--text-color-primary);
+}
+
+.todoItem button {
+    flex: 0 1 auto;
+    background: transparent;
+    cursor: pointer;
+    padding: 20px;
+    outline: none;
+    border: none;
+    min-width: fit-content;
+    /* background: rgba(0, 0, 0, 0.02); */
+    border-radius: 0px 10px 10px 0px;
+}
+
+.todoBox button {}
+
+.todoBox button i {
+    font-size: 18px;
+    color: var(--text-color-secondary);
+}
+
+
+
+.todoItem input[type="text"]:disabled {
+    text-decoration: line-through;
+    color: var(--text-color-secondary);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: var(--background-color-primary);
+    z-index: 2;
+}
