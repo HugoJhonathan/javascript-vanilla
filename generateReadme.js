@@ -3,8 +3,34 @@
 //
 const excludeFolders = ['.git', 'images',]
 const deployBase = "https://hugojhonathan.github.io/projetos-de-treino/"
+const { readFile } = require('fs/promises');
+
+let submodulesFolders
+
+const loadSubmodules = async () => await readFile('.gitmodules', 'utf-8')
+
+loadSubmodules().then(data => {
+    submodulesFolders = data
+    WriteToFile()
+})
+
+const getLinkOfSubmodule = (folderName) => {
+    let link
+    var array = submodulesFolders.toString().split("\n");
+    let i = 0
+    while (i < array.length) {
+        if (array[i].includes(folderName)) {
+            link = /[(https)].*[(.git)]/g.exec(array[i + 2])[0]
+            i += 2
+        } else {
+            i++
+        }
+    }
+    return link
+}
 
 function generateBase(folder) {
+
     // let [msg, languages, source] = ''
 
     // if (data.msg) {
@@ -19,12 +45,14 @@ function generateBase(folder) {
     //     languages = '<div align=center>\n<sub>\n\n' + langs + '</sub>\n</div>'
     // }
 
+    let source = getLinkOfSubmodule(folder) || './' + folder
+
     return `
 <table>
 <tr>
     <th width=350>
         <a href="${deployBase + folder}">
-            <img src=./${folder + '/preview.png'} width=100%  height=auto>
+            <img src=${deployBase + folder + '/preview.png'} width=100%  height=auto>
         </a>
     </th>
 
@@ -33,9 +61,9 @@ function generateBase(folder) {
 <div align="center">
 <a href="./${folder}">${folder}</a>
 
-<sub> __[🖥️ DEMO](${deployBase + folder})__ | __[📂 SOURCE](./${folder})__ </sub>     
+<sub> __[🖥️ DEMO](${deployBase + folder})__ | __[📂 SOURCE](${source})__ </sub>     
 </div>
-      
+  
 </th>
 
 </tr>
@@ -57,7 +85,6 @@ function WriteToFile() {
 
     const dirs = getDirectories("./").filter(dir => !excludeFolders.includes(dir))
 
-
     dirs.forEach((folder, index) => {
         stringBase = stringBase.concat(generateBase(folder))
     })
@@ -70,5 +97,3 @@ function WriteToFile() {
     })
     console.log("README.md gerado!")
 }
-WriteToFile()
-

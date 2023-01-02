@@ -7,7 +7,7 @@ __Live Demo__
 <tr>
     <th width=350>
         <a href="https://hugojhonathan.github.io/projetos-de-treino/1.one-page-flexbox-responsive-scss-">
-            <img src=./1.one-page-flexbox-responsive-scss-/preview.png width=100%  height=auto>
+            <img src=https://hugojhonathan.github.io/projetos-de-treino/1.one-page-flexbox-responsive-scss-/preview.png width=100%  height=auto>
         </a>
     </th>
 
@@ -28,7 +28,7 @@ __Live Demo__
 <tr>
     <th width=350>
         <a href="https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components]">
-            <img src=./2.nossa-kitanda-v2-[js-class-components]/preview.png width=100%  height=auto>
+            <img src=https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components]/preview.png width=100%  height=auto>
         </a>
     </th>
 
@@ -49,7 +49,7 @@ __Live Demo__
 <tr>
     <th width=350>
         <a href="https://hugojhonathan.github.io/projetos-de-treino/3.todo-list">
-            <img src=./3.todo-list/preview.png width=100%  height=auto>
+            <img src=https://hugojhonathan.github.io/projetos-de-treino/3.todo-list/preview.png width=100%  height=auto>
         </a>
     </th>
 
@@ -70,7 +70,7 @@ __Live Demo__
 <tr>
     <th width=350>
         <a href="https://hugojhonathan.github.io/projetos-de-treino/4.linux-style-calculator">
-            <img src=./4.linux-style-calculator/preview.png width=100%  height=auto>
+            <img src=https://hugojhonathan.github.io/projetos-de-treino/4.linux-style-calculator/preview.png width=100%  height=auto>
         </a>
     </th>
 
