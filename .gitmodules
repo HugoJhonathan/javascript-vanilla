@@ -1,3 +1,6 @@
 [submodule "4.linux-style-calculator"]
 	path = 4.linux-style-calculator
 	url = https://github.com/HugoJhonathan/linux-style-calculator.git
+[submodule "5.alura-decoder-challenge"]
+	path = 5.alura-decoder-challenge
+	url = https://github.com/HugoJhonathan/Challenge-Oracle-ONE.git
