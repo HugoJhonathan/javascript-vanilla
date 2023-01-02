@@ -5,72 +5,84 @@ __Live Demo__
 <br></h3>
 <table>
 <tr>
-<tH style='padding:none' padding=none width=350 align=right  valign="center">
-<img src=./1.one-page-flexbox-responsive-scss-/preview.png width='400px'  height="auto"></tH>
-<tH width=700 valign="center" align=left>
-  
-<p align="center">
-<a href="./1.one-page-flexbox-responsive-scss-">
-1.one-page-flexbox-responsive-scss-
-</a>
-<div align="center">
-  
-</div>
+    <th width=350>
+        <a href="https://hugojhonathan.github.io/projetos-de-treino/1.one-page-flexbox-responsive-scss-">
+            <img src=./1.one-page-flexbox-responsive-scss-/preview.png width=100%  height=auto>
+        </a>
+    </th>
+
+<th width=700 valign=center align=left>
   
 <div align="center">
-   
-<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/1.one-page-flexbox-responsive-scss-)__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](./1.one-page-flexbox-responsive-scss-)__ </sub>
-     
+<a href="./1.one-page-flexbox-responsive-scss-">1.one-page-flexbox-responsive-scss-</a>
+
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/1.one-page-flexbox-responsive-scss-)__ | __[📂 SOURCE](./1.one-page-flexbox-responsive-scss-)__ </sub>     
 </div>
       
-</tH>
+</th>
+
 </tr>
 </table>
 
 <table>
 <tr>
-<tH style='padding:none' padding=none width=350 align=right  valign="center">
-<img src=./2.nossa-kitanda-v2-[js-class-components]/preview.png width='400px'  height="auto"></tH>
-<tH width=700 valign="center" align=left>
-  
-<p align="center">
-<a href="./2.nossa-kitanda-v2-[js-class-components]">
-2.nossa-kitanda-v2-[js-class-components]
-</a>
-<div align="center">
-  
-</div>
+    <th width=350>
+        <a href="https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components]">
+            <img src=./2.nossa-kitanda-v2-[js-class-components]/preview.png width=100%  height=auto>
+        </a>
+    </th>
+
+<th width=700 valign=center align=left>
   
 <div align="center">
-   
-<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components])__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](./2.nossa-kitanda-v2-[js-class-components])__ </sub>
-     
+<a href="./2.nossa-kitanda-v2-[js-class-components]">2.nossa-kitanda-v2-[js-class-components]</a>
+
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/2.nossa-kitanda-v2-[js-class-components])__ | __[📂 SOURCE](./2.nossa-kitanda-v2-[js-class-components])__ </sub>     
 </div>
       
-</tH>
+</th>
+
 </tr>
 </table>
 
 <table>
 <tr>
-<tH style='padding:none' padding=none width=350 align=right  valign="center">
-<img src=./3.todo-list/preview.png width='400px'  height="auto"></tH>
-<tH width=700 valign="center" align=left>
-  
-<p align="center">
-<a href="./3.todo-list">
-3.todo-list
-</a>
-<div align="center">
-  
-</div>
+    <th width=350>
+        <a href="https://hugojhonathan.github.io/projetos-de-treino/3.todo-list">
+            <img src=./3.todo-list/preview.png width=100%  height=auto>
+        </a>
+    </th>
+
+<th width=700 valign=center align=left>
   
 <div align="center">
-   
-<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/3.todo-list)__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](./3.todo-list)__ </sub>
-     
+<a href="./3.todo-list">3.todo-list</a>
+
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/3.todo-list)__ | __[📂 SOURCE](./3.todo-list)__ </sub>     
 </div>
       
-</tH>
+</th>
+
+</tr>
+</table>
+
+<table>
+<tr>
+    <th width=350>
+        <a href="https://hugojhonathan.github.io/projetos-de-treino/4.linux-style-calculator">
+            <img src=./4.linux-style-calculator/preview.png width=100%  height=auto>
+        </a>
+    </th>
+
+<th width=700 valign=center align=left>
+  
+<div align="center">
+<a href="./4.linux-style-calculator">4.linux-style-calculator</a>
+
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/4.linux-style-calculator)__ | __[📂 SOURCE](./4.linux-style-calculator)__ </sub>     
+</div>
+      
+</th>
+
 </tr>
 </table>

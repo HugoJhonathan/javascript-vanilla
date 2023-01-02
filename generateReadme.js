@@ -4,19 +4,7 @@
 const excludeFolders = ['.git', 'images',]
 const deployBase = "https://hugojhonathan.github.io/projetos-de-treino/"
 
-let config = [
-    {
-        msg: 'asasd asdasd asdasdasdasd __aasdasd__',
-        source: 'https://github.com/HugoJhonathan/ti-academy-ciclo-02/tree/master/desafio1-kitanda',
-        languages: ['html', 'css', 'react']
-    },
-    {
-        msg: 'Simulação do comportamento de um carrinho de compras, com manipulação do DOM baseado em Object Class.',
-        languages: ['html', 'css', 'js']
-    },
-]
-
-function generateBase(folder, data, index) {
+function generateBase(folder) {
     // let [msg, languages, source] = ''
 
     // if (data.msg) {
@@ -34,25 +22,22 @@ function generateBase(folder, data, index) {
     return `
 <table>
 <tr>
-<tH style='padding:none' padding=none width=350 align=right  valign="center">
-<img src=./${folder + '/preview.png'} width='400px'  height="auto"></tH>
-<tH width=700 valign="center" align=left>
-  
-<p align="center">
-<a href="./${folder}">
-${folder}
-</a>
-<div align="center">
-  
-</div>
+    <th width=350>
+        <a href="${deployBase + folder}">
+            <img src=./${folder + '/preview.png'} width=100%  height=auto>
+        </a>
+    </th>
+
+<th width=700 valign=center align=left>
   
 <div align="center">
-   
-<sub> __[🖥️ DEMO](${deployBase + folder})__ </sub> <sub> | 📂</sub> <sub> __[SOURCE](./${folder})__ </sub>
-     
+<a href="./${folder}">${folder}</a>
+
+<sub> __[🖥️ DEMO](${deployBase + folder})__ | __[📂 SOURCE](./${folder})__ </sub>     
 </div>
       
-</tH>
+</th>
+
 </tr>
 </table>
 `
@@ -74,7 +59,7 @@ function WriteToFile() {
 
 
     dirs.forEach((folder, index) => {
-        stringBase = stringBase.concat(generateBase(folder, config[index]))
+        stringBase = stringBase.concat(generateBase(folder))
     })
 
     fs.writeFile("./README.md", stringBase, (err) => {
