@@ -107,3 +107,24 @@ __Live Demo__
 
 </tr>
 </table>
+
+<table>
+<tr>
+    <th width=350>
+        <a href="https://hugojhonathan.github.io/projetos-de-treino/6.tic-tac-toe">
+            <img src=https://hugojhonathan.github.io/projetos-de-treino/6.tic-tac-toe/preview.png width=100%  height=auto>
+        </a>
+    </th>
+
+<th width=700 valign=center align=left>
+  
+<div align="center">
+<a href="./6.tic-tac-toe">6.tic-tac-toe</a>
+
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/6.tic-tac-toe)__ | __[📂 SOURCE](./6.tic-tac-toe)__ </sub>     
+</div>
+  
+</th>
+
+</tr>
+</table>
