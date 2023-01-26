@@ -2,7 +2,7 @@
 // just run this file
 //
 const excludeFolders = ['.git', 'images', '.github']
-const deployBase = "https://hugojhonathan.github.io/projetos-de-treino/"
+const deployBase = "https://hugojhonathan.github.io/javascript-vanilla/"
 const { readFile } = require('fs/promises');
 
 let submodulesFolders
