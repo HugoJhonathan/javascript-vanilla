@@ -6,6 +6,27 @@ __Live Demo__
 <table>
 <tr>
     <th width=350>
+        <a href="https://hugojhonathan.github.io/projetos-de-treino/.github">
+            <img src=https://hugojhonathan.github.io/projetos-de-treino/.github/preview.png width=100%  height=auto>
+        </a>
+    </th>
+
+<th width=700 valign=center align=left>
+  
+<div align="center">
+<a href="./.github">.github</a>
+
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/projetos-de-treino/.github)__ | __[📂 SOURCE](./.github)__ </sub>     
+</div>
+  
+</th>
+
+</tr>
+</table>
+
+<table>
+<tr>
+    <th width=350>
         <a href="https://hugojhonathan.github.io/projetos-de-treino/1.one-page-flexbox-responsive-scss-">
             <img src=https://hugojhonathan.github.io/projetos-de-treino/1.one-page-flexbox-responsive-scss-/preview.png width=100%  height=auto>
         </a>
