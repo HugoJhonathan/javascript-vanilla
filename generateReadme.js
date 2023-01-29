@@ -1,20 +1,24 @@
-//
-// just run this file
-//
-const excludeFolders = ['.git', 'images', '.github']
+const onlyThisFolder = false
 const deployBase = "https://hugojhonathan.github.io/javascript-vanilla/"
-const { readFile } = require('fs/promises');
 
+
+const excludeFolders = ['.git', 'images', '.github']
+const { readFile } = require('fs/promises')
+const fs = require("fs")
 let submodulesFolders
 
 const loadSubmodules = async () => await readFile('.gitmodules', 'utf-8')
 
 loadSubmodules().then(data => {
     submodulesFolders = data
+}).catch(err => {
+
+}).finally(() => {
     WriteToFile()
 })
 
 const getLinkOfSubmodule = (folderName) => {
+    if (!submodulesFolders) return null
     let link
     var array = submodulesFolders.toString().split("\n");
     let i = 0
@@ -29,39 +33,30 @@ const getLinkOfSubmodule = (folderName) => {
     return link
 }
 
-function generateBase(folder) {
+function generateBase(folder = '') {
 
-    // let [msg, languages, source] = ''
-
-    // if (data.msg) {
-    //     msg = '<div align="center">\n\n*' + data.msg + '*\n\n</div>'
-    // }
-    // source = "https://hugojhonathan.github.io/projetos-de-treino/" + folder
-    // if (data.source) {
-    //     source = data.source
-    // }
-    // if (data.languages) {
-    //     let langs = data.languages.map(el => `__${el.toUpperCase()}__`).toString().replaceAll(',', ' | ')
-    //     languages = '<div align=center>\n<sub>\n\n' + langs + '</sub>\n</div>'
-    // }
-
+    let deployUrl = deployBase + folder
+    let nameOfProject = folder ? folder.replace("/", "") : deployBase.split("/")[3]
     let source = getLinkOfSubmodule(folder) || './' + folder
+    if (onlyThisFolder) {
+        source = "#"
+    }
 
     return `
 <table>
 <tr>
     <th width=350>
-        <a href="${deployBase + folder}">
-            <img src=${deployBase + folder + '/preview.png'} width=100%  height=auto>
+        <a href="${deployUrl}">
+            <img src=./${folder + '/preview.png'} width=100%  height=auto>
         </a>
     </th>
 
 <th width=700 valign=center align=left>
   
 <div align="center">
-<a href="./${folder}">${folder}</a>
+<a href="${source}">${nameOfProject}</a>
 
-<sub> __[🖥️ DEMO](${deployBase + folder})__ | __[📂 SOURCE](${source})__ </sub>     
+<sub> __[🖥️ DEMO](${deployUrl})__ | __[📂 SOURCE](${source})__ </sub>     
 </div>
   
 </th>
@@ -71,7 +66,7 @@ function generateBase(folder) {
 `
 }
 
-const fs = require("fs")
+
 
 const getDirectories = source => {
     return fs.readdirSync(source, { withFileTypes: true })
@@ -85,9 +80,14 @@ function WriteToFile() {
 
     const dirs = getDirectories("./").filter(dir => !excludeFolders.includes(dir))
 
-    dirs.forEach((folder, index) => {
-        stringBase = stringBase.concat(generateBase(folder))
-    })
+    if (!onlyThisFolder) {
+        dirs.forEach((folder, index) => {
+            stringBase = stringBase.concat(generateBase(folder + "/"))
+        })
+    } else {
+        stringBase = stringBase.concat(generateBase())
+    }
+
 
     fs.writeFile("./README.md", stringBase, (err) => {
         if (err) {
