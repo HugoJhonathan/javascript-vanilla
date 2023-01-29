@@ -47,7 +47,7 @@ function generateBase(folder = '') {
 <tr>
     <th width=350>
         <a href="${deployUrl}">
-            <img src=./${folder + '/preview.png'} width=100%  height=auto>
+            <img src=${deployUrl + 'preview.png'} width=100%  height=auto>
         </a>
     </th>
 
