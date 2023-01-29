@@ -23,7 +23,7 @@ const getLinkOfSubmodule = (folderName) => {
     var array = submodulesFolders.toString().split("\n");
     let i = 0
     while (i < array.length) {
-        if (array[i].includes(folderName)) {
+        if (array[i].includes(folderName.replace("/", ""))) {
             link = /[(https)].*[(.git)]/g.exec(array[i + 2])[0]
             i += 2
         } else {
