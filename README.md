@@ -77,9 +77,9 @@ __Live Demo__
 <th width=700 valign=center align=left>
   
 <div align="center">
-<a href="./4.linux-style-calculator/">4.linux-style-calculator</a>
+<a href="https://github.com/HugoJhonathan/linux-style-calculator.git">4.linux-style-calculator</a>
 
-<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/javascript-vanilla/4.linux-style-calculator/)__ | __[📂 SOURCE](./4.linux-style-calculator/)__ </sub>     
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/javascript-vanilla/4.linux-style-calculator/)__ | __[📂 SOURCE](https://github.com/HugoJhonathan/linux-style-calculator.git)__ </sub>     
 </div>
   
 </th>
@@ -98,9 +98,9 @@ __Live Demo__
 <th width=700 valign=center align=left>
   
 <div align="center">
-<a href="./5.alura-decoder-challenge/">5.alura-decoder-challenge</a>
+<a href="https://github.com/HugoJhonathan/Challenge-Oracle-ONE.git">5.alura-decoder-challenge</a>
 
-<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/javascript-vanilla/5.alura-decoder-challenge/)__ | __[📂 SOURCE](./5.alura-decoder-challenge/)__ </sub>     
+<sub> __[🖥️ DEMO](https://hugojhonathan.github.io/javascript-vanilla/5.alura-decoder-challenge/)__ | __[📂 SOURCE](https://github.com/HugoJhonathan/Challenge-Oracle-ONE.git)__ </sub>     
 </div>
   
 </th>
